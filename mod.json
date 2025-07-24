@@ -8,9 +8,55 @@
 	},
 	"resources": {
 		"spritesheets": {
-			"tintableFireSheet": [
+			"TintableFireSheet": [
 				"resources/customFireSheet/*.png"
 			]
+		}
+	},
+	"settings": {
+		"enable-mod": {
+			"type": "bool",
+			"name": "Enable Mod",
+			"description": "Enables/Disables the entire mod functionality.",
+			"default": true
+		},
+		"swap-colors": {
+			"type": "bool",
+			"name": "Swap Colors",
+			"description": "Swaps the use of P1 and P2 colors for tinting the fireBoost sprite. \n\nIf enabled, uses P2 for the outer part and P1 for the inner part.",
+			"default": false
+		},
+		"customization-title": {
+			"type": "title",
+			"name": "Customization",
+			"description": "Customize the Fire Boost a little further!"
+		},
+		"use-custom-colors": {
+			"type": "bool",
+			"name": "Use Custom Colors",
+			"description": "Use custom colors for the fireBoost sprite, instead of using your Player Colors!",
+			"default": false
+		},
+		"custom-col1": {
+			"type": "rgb",
+			"name": "Color 1",
+			"description": "The main color to use for the Fire Boost sprite. \n\nThis color is used for the *outer* part of the fire.",
+			"enable-if": "use-custom-colors",
+			"default": [255, 255, 255]
+		},
+		"custom-col2": {
+			"type": "rgb",
+			"name": "Color 2",
+			"description": "The secondary color to use for the Fire Boost sprite. \n\nThis color is used for the *inner* part of the fire.",
+			"enable-if": "use-custom-colors",
+			"default": [255, 255, 255]
+		},
+		"custom-colwhite": {
+			"type": "rgb",
+			"name": "Extra Color",
+			"description": "The Extra color to use for the Fire Boost Sprite. \n\nThis color is used for the middle part of the fire sprite, and is ***heavily recommended*** to keep as White (as this is the color used in the vanilla sprite).",
+			"enable-if": "use-custom-colors",
+			"default": [255, 255, 255]
 		}
 	},
 	"id": "saritahhh.customizable_fire",
