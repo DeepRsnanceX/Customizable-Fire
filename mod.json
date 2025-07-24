@@ -1,0 +1,21 @@
+{
+	"geode": "4.6.3",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"resources": {
+		"spritesheets": {
+			"tintableFireSheet": [
+				"resources/customFireSheet/*.png"
+			]
+		}
+	},
+	"id": "saritahhh.customizable_fire",
+	"name": "Customizable Fire",
+	"version": "v1.0.0",
+	"developer": "Saritahhh",
+	"description": "Customize your fireBoost!"
+}
